@@ -1,0 +1,401 @@
+   /*
+   
+
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+   
+   
+   */ 
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'mynerve', cursive;
+    text-shadow: none;
+    font-weight: 100;
+    font-size: max(44px, 5.2vw);
+}
+h2{
+    font-family: 'mynerve', cursive;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 100;
+    font-size: max(20px, 2.8vw);
+}
+h3{
+    font-family: 'Bodoni Moda', serif;
+    text-shadow: none;
+    font-size: max(10px, 1.5) ;
+}
+/*           BOTAO  CHAMADA                */
+
+ div.Chamada a {
+    font-size: max(5px, 1.0vw);
+    color: #090909;
+    text-decoration: none;
+    padding: 20px 80px;
+    
+    font-weight: 100;
+    background-color: #FFF;
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-out;
+}
+
+ div.Chamada a:hover{
+    opacity: .8;
+    
+}
+div.Chamada-sobre a{ 
+   text-decoration: none;
+    font-size: max(5px, 1.0vw);
+    color: #FFF;
+    padding: 20px 80px;
+    
+    font-weight: 100;
+    background-color: #000;
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-out;
+}
+div.Chamada-sobre a:hover{
+    opacity: .8;
+}
+
+
+
+/*                                */
+/*             HEADER             */
+/*                                */
+header{
+    
+    max-width: 100%;
+    height: 100vh;
+    background: url('../imagens/Teste.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* preenche tudo */
+    background-position: center top; /* Alinha a foto pelo topo para não cortar a cabeça */
+    
+    position: relative; 
+    
+
+    
+}
+
+/*                   NAVEBAR                 */
+/*                                          */
+header nav#nav-esq{
+width: 100%;
+height: 100px;
+background-color: rgb(254, 254, 254);      /* mudar cor do fundo da logo*/
+
+display: flex;
+flex-flow: row;
+align-items: center;
+
+}
+header nav#nav-esq div#logo{
+    width: 100px;
+    height: 120px;
+    margin-left: 5rem;
+}
+header nav#nav-esq div#logo img{
+    max-height: 100%;
+    max-width: 200%;
+}
+
+
+
+/*=========MENU HAMBURGUER===============*/
+
+header nav#nav-esq ul#icone-menu{
+   display: none;
+
+}
+header nav#nav-esq ul#icone-menu li{
+    list-style: none;
+}
+header nav#nav-esq ul#icone-menu li ion-icon{
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    margin-right: 2rem;
+}
+header nav#nav-esq ul#menu-principal{
+    margin-left: auto;
+    margin-right: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+header nav#nav-esq ul#menu-principal li{
+    list-style:none ;
+    margin-left: 2rem;
+}
+header nav#nav-esq ul#menu-principal li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    text-shadow: 4px 6px 10px #f7f7f7;
+    padding-bottom: 10px;
+    transition: .3s ease-out;
+}
+ 
+header nav#nav-esq ul#menu-principal li a:hover{
+border-bottom: 1px solid #010101;
+opacity: .6;
+
+}
+
+/*                CHAMADA                */
+
+header div.Chamada {
+    position: absolute;
+     width: 100%;
+     height: 100px;
+     text-align: center;
+     top: 55%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+}
+
+header div.Chamada h1{
+    color: #f7f7f7;
+    font-family: 'Bodoni Moda', serif;
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+header div.Chamada h2{
+    color:#f7f7f7 ;
+    font-family: 'Bodoni Moda', serif;
+  
+  
+    animation-name: HeaderH1-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards; 
+
+}
+header div.Chamada h3{
+    color: #000000;
+    font-family: 'Bodoni Moda', serif;
+    margin-bottom: 55px;
+  
+     animation-name: HeaderH1-moverParaEsquerda;
+      animation-duration: 1.5s;
+      animation-delay: 0.5;
+      animation-timing-function: ease-out;
+      animation-fill-mode: backwards; 
+}
+
+main div.Chamada-sobre{
+    
+     
+     
+     text-align: center;
+     top: 55%;
+    
+     
+
+
+}
+
+
+
+/*                                  */
+/*          SECTION SOBRE           */
+/*                                  */
+
+section.SOBRE{
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #FFF;
+    padding-top: 50px;
+    margin-bottom: 150px;
+    
+}
+section.SOBRE h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;    /* Distancia da primeira e segunda pg*/
+    font-weight: 500;                                                              
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000;
+    text-shadow: #FFF;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-shadow: none;
+   
+}
+
+section.SOBRE div.SOBRE-mestre{
+
+        
+        justify-content: center;
+        margin-bottom: 40px;
+      
+}
+section.SOBRE div.SOBRE-mestre div.SOBRE-texto{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    max-width: 850px;
+    text-align: center;
+    line-height: 1.8;
+    color: #000;
+
+    margin-bottom: 2;
+
+
+}
+
+
+/* ===== RESET ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== CTA ===== */
+
+.cta{
+    background-color: black;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.cta h2{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.cta p{
+    color: #f7f7f7;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-btn{
+    background-color: white;
+    color: black;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.cta-btn:hover{
+    background-color: #ddd;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background-color: black;
+    padding: 40px 80px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* esquerda */
+.footer-left{
+    color: #8fa6bd;
+    font-size: 14px;
+}
+
+
+/* menu centro */
+.footer-menu{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: #8fa6bd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-menu a:hover{
+    color: white;
+}
+
+
+/* redes sociais */
+.footer-social{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img{
+    width: 22px;
+    filter: brightness(0.7);
+    transition: 0.3s;
+}
+
+.footer-social img:hover{
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:768px){
+
+    .cta h2{
+        font-size: 32px;
+    }
+
+    .cta p{
+        font-size: 16px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
