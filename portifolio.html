@@ -19,12 +19,13 @@
     <title>S44nttos - Portifolio</title>
 
  </head>
- <body>
+ 
     <body>
-        <!-- Navbar -->
-        <nav id="nav-esq-portifolio">
+        <header>
+            <!-- Navbar -->
+             <nav id="nav-esq">
             <div id="logo">
-                <img src="#" alt="logo">
+                <img src="./imagens/logo-branca (2).png" alt="logo">
             </div>
 
             <div id="overlay"></div>
@@ -33,7 +34,7 @@
              <ul id="icone-menu">
               <li id="menu"><ion-icon name="menu-outline"></ion-icon></li>
               <li id="menuX" style="display:none;"> <ion-icon name="close-outline"></ion-icon>   </li>
-            </ul>
+             </ul>
 
              <ul id="menu-principal">
                 <li><a href="./index.html">HOME</a></li>
@@ -44,6 +45,10 @@
              </ul>
             
         </nav>
+
+        </header>
+
+
 
          <!-- Hero Section -->
     <section class="hero">
@@ -255,17 +260,6 @@
 
         <!-- Item  -->
         <div class="gallery-item" data-category="editorial">
-            <video width="600" autoplay muted loop>
-                <source src="./imagens/video-editorial-o.mp4" type="video/mp4">
-            </video>
-            <div class="gallery-overlay">
-                <h3>Editorial Oakley</h3>
-                <p>| Editorial |</p>
-            </div>
-        </div>
-
-        <!-- Item  -->
-        <div class="gallery-item" data-category="editorial">
             <img src="./imagens/header_capa_ M.jpeg" alt="Cortez">
             <div class="gallery-overlay">
                 <h3>Editorial Cortez x Zeller Plug </h3>
@@ -283,8 +277,65 @@
     <div class="lightbox-caption"></div>
 </div>
 
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Esquerda -->
+        <div class="footer-left">
+            © 2026 S44nttos. Todos os direitos reservados.
+        </div>
+
+        <!-- Centro -->
+        <nav class="footer-menu">
+            <a href="./index.html">HOME</a>
+            <a href="./portifolio.html">PORTFÓLIO</a>
+            <a href="./sobre.html">SOBRE</a>
+            <a href="./contato.html">CONTATO</a>
+        </nav>
+
+        <!-- Direita -->
+        <div class="footer-social">
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/s44nttos" target="_blank">
+                <img src="./imagens/icone-instagram.png" alt="Instagram">
+            </a>
+
+            <!-- Email-->
+            <a href="denifemay@email.com">
+                <img src="./imagens/icone-email.png" alt="Email">
+            </a>
+
+             <!--Tik Tok-->
+            <a href="https://www.tiktok.com/@s44nttos?lang=pt-BR" >
+                <img src="./imagens/icone-tiktok.png" alt="Tik Tok">
+            </a>
+          
+        </div>
+
+    </div>
+
+</footer>
+
 
 <script src="portifolio/portifolio.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Ionicons (versão correta com módulos ES) -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- Script do menu -->
+    <script src="./scripts/index.js"></script>
+
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+
 
     
  </body>
